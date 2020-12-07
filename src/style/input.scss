@@ -1,0 +1,227 @@
+@import './abstracts/variable';
+@import './abstracts/mixin';
+
+@include b(input) {
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: $-color-border;
+    transform: scaleY(0.5);
+  }
+  @include when(textarea) {
+    &::after {
+      display: none;
+    }
+  }
+  @include e(label) {
+    width: 33%;
+    color: $-picker-label-color;
+    box-sizing: border-box;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  @include e(label-inner) {
+    display: inline-block;
+    padding: 11px 10px 11px 0;
+  }
+  @include e(prefix) {
+    margin-right: 8px;
+  }
+  @include e(suffix) {
+    margin-left: 8px;
+  }
+  @include e(block) {
+    position: relative;
+    display: flex;
+  }
+  @include when(disabled) {
+    .wd-input__inner, .wd-input__textarea-inner {
+      color: $-color-tip;
+      background: transparent;
+    }
+  }
+  @include when(error) {
+    &::after {
+      background: $-color-aid-red;
+    }
+    .wd-input__inner, .wd-input__textarea-inner {
+      color: $-color-aid-red;
+      background: transparent;
+
+      &::-webkit-input-placeholder {
+        color: $-color-aid-red;
+      }
+    }
+  }
+  @include when(cell) {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 15px;
+    background-color: #fff;
+    @include halfPixelBorder('bottom', 15px);
+
+    &.is-error::after {
+      background: $-color-line;
+    }
+    .wd-input__textarea, .wd-input__block {
+      flex: 1;
+    }
+    .wd-input__icon {
+      height: 42px;
+      line-height: 42px;
+    }
+    .wd-input__prefix {
+      display: inline-block;
+    }
+    .wd-input__inner {
+      height: 42px;
+    }
+    @include when(center) {
+      align-items: center;
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }
+  @include when(large) {
+    .wd-input__label {
+      font-size: 16px;
+    }
+    .wd-input__inner {
+      font-size: 16px;
+      height: 44px;
+    }
+    .wd-input__textarea-inner {
+      font-size: 16px;
+    }
+    .wd-input__count {
+      font-size: 14px;
+    }
+    .wd-input__textarea-count {
+      font-size: 14px;
+    }
+    .wd-input__icon {
+      height: 44px;
+      font-size: 18px;
+      line-height: 44px;
+    }
+  }
+  @include e(inner) {
+    flex: 1;
+    height: 40px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: $-color-title;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+
+    &::-webkit-input-placeholder {
+      color: $-color-tip;
+    }
+  }
+  @include e(icon) {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 16px;
+    color: $-color-icon;
+    vertical-align: middle;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  @include e(count) {
+    margin-left: 8px;
+    font-size: 12px;
+    color: $-color-secondary;
+    vertical-align: middle;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+  }
+  @include e(count-current) {
+    color: $-color-title;
+
+    @include when(error) {
+      color: $-color-aid-red;
+    }
+  }
+
+  @include e(textarea) {
+    position: relative;
+    padding: 17px 14px;
+    font-size: 0;
+    background: #fff;
+    
+    @include when(show-limit) {
+      padding-bottom: 25px;
+    }
+    @include when(text-auto) {
+      padding: 10px 0;
+
+      .wd-input__textarea-suffix {
+        top: 10px;
+        right: 0;
+      }
+    }
+  }
+  @include e(textarea-inner) {
+    width: 100%;
+    padding: 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: $-color-title;
+    overflow: auto;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+
+    &::-webkit-input-placeholder {
+      color: $-color-tip;
+    }
+    @include when(suffix) {
+      padding-right: 20px;
+    }
+  }
+  @include e(textarea-suffix) {
+    position: absolute;
+    right: 14px;
+    top: 17px;
+    bottom: 0;
+    z-index: 1;
+  }
+  @include e(textarea-icon) {
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $-color-icon;
+    background: #fff;
+  }
+  @include e(textarea-count) {
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    font-size: 12px;
+    color: $-color-secondary;
+    background: #fff;
+  }
+  @include e(textarea-count-current) {
+    color: $-color-title;
+
+    @include when(error) {
+      color: $-color-aid-red;
+    }
+  }
+}
