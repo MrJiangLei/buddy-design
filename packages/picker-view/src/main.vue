@@ -23,10 +23,10 @@
 </template>
 
 <script>
-import locale from 'wot-design/src/mixins/locale'
+import locale from 'buddy-design/src/mixins/locale'
 import pickerViewProps from './pickerViewProps'
 import WdPickerViewColumn from './pickerColumn'
-import WdLoading from 'wot-design/packages/loading'
+import WdLoading from 'buddy-design/packages/loading'
 
 export default {
   name: 'WdPickerView',
@@ -74,8 +74,8 @@ export default {
       })
     },
     value: {
-      handler () {
-        if (!this.value || (this.value instanceof Array && !this.value.length)) {
+      handler (val) {
+        if ((!val || (val instanceof Array && !val.length)) && this.columns.length) {
           this.$nextTick(() => {
             this.onChange(0)
           })
@@ -86,7 +86,15 @@ export default {
   },
   methods: {
     onChange (columnIndex) {
-      this.columnChange && this.columnChange(this, this.getColumnItem(columnIndex), columnIndex)
+      if (this.columnChange) {
+        this.columnChange(this, this.getColumnItem(columnIndex) || {}, columnIndex, () => {
+          this.handleChange(columnIndex)
+        })
+      } else {
+        this.handleChange(columnIndex)
+      }
+    },
+    handleChange (columnIndex) {
       if (this.isSingle) {
         let value = this.getColumnValue(columnIndex)
         this.$emit('input', value)
@@ -140,6 +148,11 @@ export default {
         column.data = data
         column.setIndex(0, false)
       }
+    },
+    getColumnsData () {
+      return this.children.map(column => {
+        return column.data
+      })
     },
     onCancel () {
       this.$emit('cancel')

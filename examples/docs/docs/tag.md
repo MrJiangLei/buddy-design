@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { Tag } from 'wot-design'
+import { Tag } from 'buddy-design'
 
 Vue.use(Tag)
 ```

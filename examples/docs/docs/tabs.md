@@ -1,10 +1,10 @@
-## Tab 标签页
+## Tabs 标签页
 
 ### 按需引入
 
 ```javascript
 import Vue from 'vue'
-import { Tab, Tabs } from 'wot-design'
+import { Tab, Tabs } from 'buddy-design'
 
 Vue.use(Tab)
 Vue.use(Tabs)

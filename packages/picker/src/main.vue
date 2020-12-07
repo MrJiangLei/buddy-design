@@ -32,7 +32,7 @@
       <wd-picker-view
         ref="pickerView"
         v-model="pickerValue"
-        :columns="columns"
+        :columns="displayColumns"
         :loading="loading"
         :arrow-html="arrowHtml"
         :visible-item-count="visibleItemCount"
@@ -46,9 +46,9 @@
 </template>
 
 <script>
-import locale from 'wot-design/src/mixins/locale'
-import WdPopup from 'wot-design/packages/popup'
-import WdPickerView from 'wot-design/packages/picker-view'
+import locale from 'buddy-design/src/mixins/locale'
+import WdPopup from 'buddy-design/packages/popup'
+import WdPickerView from 'buddy-design/packages/picker-view'
 import pickerViewProps from '../../picker-view/src/pickerViewProps'
 import pickerProps from './pickerProps'
 
@@ -63,7 +63,9 @@ export default {
     return {
       showValue: '',
       popupShow: false,
-      pickerValue: ''
+      pickerValue: '',
+      lastColumns: [],
+      displayColumns: []
     }
   },
   props: {
@@ -95,15 +97,23 @@ export default {
         })
       },
       immediate: true
+    },
+    columns: {
+      handler () {
+        this.displayColumns = this.columns
+      },
+      immediate: true
     }
   },
   methods: {
     showPopup () {
       if (this.disabled || this.readonly) return
 
+      this.lastColumns = this.$refs.pickerView.getColumnsData()
       this.popupShow = true
     },
     onCancel () {
+      this.displayColumns = this.lastColumns
       this.pickerValue = this.value
       this.popupShow = false
       this.$emit('cancel')

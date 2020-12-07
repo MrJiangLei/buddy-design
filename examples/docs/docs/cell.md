@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { CellGroup, Cell } from 'wot-design'
+import { CellGroup, Cell } from 'buddy-design'
 
 Vue.use(CellGroup)
 Vue.use(Cell)
@@ -68,7 +68,7 @@ Vue.use(Cell)
 <wd-cell title="标题文字" value="内容" size="large" />
 ```
 
-### 
+###
 
 ### 分组标题
 
@@ -142,8 +142,6 @@ export default {
 }
 </style>
 ```
-
-> 自定义内容如果超出了默认的46px高度，可能需要你自己通过绝对定位使其保持样式一致。
 
 ### CellGroup Attributes
 

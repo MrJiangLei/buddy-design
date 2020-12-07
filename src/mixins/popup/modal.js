@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import { context } from './context'
-import Modal from 'wot-design/packages/modal'
+import Modal from 'buddy-design/packages/modal'
 
 let modal
 

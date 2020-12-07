@@ -8,8 +8,8 @@ Wot Design 默认使用中文语言。
 
 ```javascript
 import Vue from 'vue'
-import WotDesign from 'wot-design'
-import enUS from 'wot-design/lib/locale/lang/en-US'
+import WotDesign from 'buddy-design'
+import enUS from 'buddy-design/lib/locale/lang/en-US'
 
 Vue.use(WotDesign, {
   locale: enUS
@@ -20,9 +20,9 @@ Vue.use(WotDesign, {
 
 ```javascript
 import Vue from 'vue'
-import { MessageBox, InfiniteLoad } from 'wot-design'
-import locale from 'wot-design/lib/locale'
-import enUS from 'wot-design/lib/locale/lang/en-US'
+import { MessageBox, InfiniteLoad } from 'buddy-design'
+import locale from 'buddy-design/lib/locale'
+import enUS from 'buddy-design/lib/locale/lang/en-US'
 
 Vue.use(MessageBox)
 Vue.use(InfiniteLoad)
@@ -35,10 +35,10 @@ locale.use(enUS)
 ```javascript
 import Vue from 'vue'
 import App from './App'
-import WotDesign from 'wot-design'
+import WotDesign from 'buddy-design'
 import VueI18n from 'vue-i18n'
-import zhCN from 'wot-design/lib/locale/lang/zh-CN'
-import enUS from 'wot-design/lib/locale/lang/en-US'
+import zhCN from 'buddy-design/lib/locale/lang/zh-CN'
+import enUS from 'buddy-design/lib/locale/lang/en-US'
 
 Vue.use(VueI18n)
 
@@ -72,11 +72,11 @@ new Vue({
 
 ```javascript
 import Vue from 'vue'
-import { MessageBox, InfiniteLoad } from 'wot-design'
+import { MessageBox, InfiniteLoad } from 'buddy-design'
 import VueI18n from 'vue-i18n'
-import zhCN from 'wot-design/lib/locale/lang/zh-CN'
-import enUS from 'wot-design/lib/locale/lang/en-US'
-import locale from 'wot-design/lib/locale'
+import zhCN from 'buddy-design/lib/locale/lang/zh-CN'
+import enUS from 'buddy-design/lib/locale/lang/en-US'
+import locale from 'buddy-design/lib/locale'
 
 Vue.use(VueI18n)
 
@@ -104,8 +104,8 @@ locale.i18n((key, value) => i18n.t(key, value))
 
 ```html
 <script src="//cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="//cdn.jsdelivr.net/npm/wot-design/lib/index.js"></script>
-<script src="//cdn.jsdelivr.net/npm/wot-design/lib/umd/locale/en-US.js"></script>
+<script src="//cdn.jsdelivr.net/npm/buddy-design/lib/index.js"></script>
+<script src="//cdn.jsdelivr.net/npm/buddy-design/lib/umd/locale/en-US.js"></script>
 
 <script>
   WotDesign.locale(WotDesign.lang.en)

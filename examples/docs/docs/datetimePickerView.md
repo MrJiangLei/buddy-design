@@ -6,7 +6,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { DatetimePickerView } from 'wot-design'
+import { DatetimePickerView } from 'buddy-design'
 
 Vue.use(DatetimePickerView)
 ```

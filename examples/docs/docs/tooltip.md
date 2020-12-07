@@ -6,7 +6,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { Tooltip } from 'wot-design'
+import { Tooltip } from 'buddy-design'
 
 Vue.use(Tooltip)
 ```

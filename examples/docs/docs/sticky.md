@@ -6,7 +6,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { Sticky } from 'wot-design'
+import { Sticky } from 'buddy-design'
 
 Vue.use(Sticky)
 ```

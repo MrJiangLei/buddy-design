@@ -1,8 +1,8 @@
 <script>
-import animateScrollLeft from 'wot-design/src/utils/animateScrollLeft'
-import locale from 'wot-design/src/mixins/locale'
-import touchMixin from 'wot-design/src/mixins/touch'
-import Sticky from 'wot-design/packages/sticky'
+import animateScrollLeft from 'buddy-design/src/utils/animateScrollLeft'
+import locale from 'buddy-design/src/mixins/locale'
+import touchMixin from 'buddy-design/src/mixins/touch'
+import Sticky from 'buddy-design/packages/sticky'
 
 export default {
   name: 'WdTabs',

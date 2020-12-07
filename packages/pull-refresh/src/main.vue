@@ -24,9 +24,9 @@
 </template>
 
 <script>
-import locale from 'wot-design/src/mixins/locale'
-import { getScrollTargetEvent } from 'wot-design/src/utils'
-import WdLoading from 'wot-design/packages/loading'
+import locale from 'buddy-design/src/mixins/locale'
+import { getScrollTargetEvent } from 'buddy-design/src/utils'
+import WdLoading from 'buddy-design/packages/loading'
 
 export default {
   name: 'WdPullRefresh',

@@ -1,5 +1,5 @@
 <script>
-import WdBadge from 'wot-design/packages/badge'
+import WdBadge from 'buddy-design/packages/badge'
 
 export default {
   name: 'WdTabbarItem',

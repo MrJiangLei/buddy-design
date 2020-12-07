@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import DatetimePickerView from 'wot-design/src/mixins/datetimePickerView'
-import WdPickerView from 'wot-design/packages/picker-view'
+import DatetimePickerView from 'buddy-design/src/mixins/datetimePickerView'
+import WdPickerView from 'buddy-design/packages/picker-view'
 
 export default {
   name: 'WdDatetimePickerView',

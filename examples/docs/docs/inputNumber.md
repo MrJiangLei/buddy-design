@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { InputNumber } from 'wot-design'
+import { InputNumber } from 'buddy-design'
 
 Vue.use(InputNumber)
 ```

@@ -2,9 +2,10 @@
   <header class="header">
     <div class="header-container">
       <router-link :to="{ path: '/' }" class="logo-block">
-        <img class="wot-design-logo" src="../assets/img/wot-design.png" alt="wot design" />
-        <h1 class="wot-design-title">京麦 Wot Design</h1>
+        <img class="buddy-design-logo" src="../assets/img/wot-design.png" alt="wot design" />
+        <h1 class="buddy-design-title">京麦 Wot Design</h1>
       </router-link>
+      <survey></survey>
       <ul class="header-tab">
         <!-- 搜索 -->
         <li class="header-tab__item">
@@ -54,11 +55,12 @@
 <script>
 import pagesConfig from '../pages.config.json'
 import search from './search.vue'
+import survey from './survey'
 import axios from 'axios'
 
 const { version } = require('../../../package.json')
 export default {
-  components: { search },
+  components: { search, survey },
   data () {
     return {
       pages: pagesConfig,
@@ -78,7 +80,7 @@ export default {
       this.isShowOption = !this.isShowOption
     },
     getVersions () {
-      const requestUrl = process.env.NODE_ENV === 'dev' ? '/static/public/versions.json' : '/wot-design/static/public/versions.json'
+      const requestUrl = process.env.NODE_ENV === 'dev' ? '/static/public/versions.json' : '/buddy-design/static/public/versions.json'
 
       axios.get(requestUrl).then(res => {
         this.versions = res.data
@@ -118,7 +120,7 @@ export default {
       this.isShowOption = !this.isShowOption
       if (selected === this.version) return
       // location.hash
-      window.location.href = `${ location.origin }/wot-design/${ selected }/#/components/introduction`
+      window.location.href = `${ location.origin }/buddy-design/${ selected }/#/components/introduction`
     },
     clickOutside (event) {
       let clickDom = event.target
@@ -177,14 +179,14 @@ export default {
     vertical-align: middle;
   }
 }
-.wot-design-logo {
+.buddy-design-logo {
   display: inline-block;
   margin-right: 10px;
   width: 40px;
   height: 40px;
   vertical-align: middle;
 }
-.wot-design-title {
+.buddy-design-title {
   display: inline-block;
   font-weight: normal;
   font-size: 18px;
@@ -323,7 +325,7 @@ export default {
   }
 }
 @media (max-width: 773px) {
-  .wot-design-title {
+  .buddy-design-title {
     font-size: 16px;
   }
   .header-container {

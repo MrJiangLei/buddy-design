@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { isSupportSticky, getScrollTargetEvent } from 'wot-design/src/utils'
+import { isSupportSticky, getScrollTargetEvent } from 'buddy-design/src/utils'
 
 export default {
   name: 'Sticky',

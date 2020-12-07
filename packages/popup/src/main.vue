@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import popupMixin from 'wot-design/src/mixins/popup'
+import popupMixin from 'buddy-design/src/mixins/popup'
 
 export default {
   name: 'WdPopup',

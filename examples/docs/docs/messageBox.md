@@ -8,7 +8,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { MessageBox } from 'wot-design'
+import { MessageBox } from 'buddy-design'
 
 Vue.use(MessageBox)
 ```

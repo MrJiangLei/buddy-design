@@ -1,6 +1,6 @@
 <script>
-import DatetimePickerView from 'wot-design/src/mixins/datetimePickerView'
-import Picker from 'wot-design/packages/picker'
+import DatetimePickerView from 'buddy-design/src/mixins/datetimePickerView'
+import Picker from 'buddy-design/packages/picker'
 import pickerProps from '../../picker/src/pickerProps'
 
 export default {

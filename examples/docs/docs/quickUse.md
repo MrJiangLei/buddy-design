@@ -8,12 +8,12 @@
 (sudo) npm install -g @vue/cli
 vue create example
 cd example
-npm i wot-design 
+npm i buddy-design
 ```
 
 > 使用京东的npm私域，`npm config set @jd:registry=http://registry.m.jd.com`
 
-使用 vue-cli 脚手架快速创建一个 Vue 项目，并在该项目中安装 `wot-design`
+使用 vue-cli 脚手架快速创建一个 Vue 项目，并在该项目中安装 `buddy-design`
 
 ### 引入 Wot Design
 
@@ -22,8 +22,8 @@ npm i wot-design
 ```javascript
 import Vue from 'vue'
 import App from './App.vue'
-import WotDesign from 'wot-design'
-import 'wot-design/lib/theme-default/index.css'
+import WotDesign from 'buddy-design'
+import 'buddy-design/lib/theme-default/index.css'
 
 Vue.use(WotDesign)
 
@@ -50,7 +50,7 @@ npm i babel-plugin-import -D
 {
   "plugins": [
     ["import", {
-      "libraryName": "wot-design",
+      "libraryName": "buddy-design",
       "style": true
     }]
   ]
@@ -61,7 +61,7 @@ npm i babel-plugin-import -D
 
 ```javascript
 import Vue from 'vue'
-import { Button } from 'wot-design'
+import { Button } from 'buddy-design'
 
 Vue.use(Button)
 ```

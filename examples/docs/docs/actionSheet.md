@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { ActionSheet } from 'wot-design'
+import { ActionSheet } from 'buddy-design'
 
 Vue.use(ActionSheet)
 ```
@@ -96,7 +96,7 @@ export default {
 | cancel-text | 取消按钮文案 | string | - | - |
 | close-on-click-action | 点击选项后是否关闭菜单 | boolean | - | true |
 | lock-scroll | 锁定背景滚动 | boolean | - | true |
-| close-on-click-modal | 点击遮罩是否关闭 | boolean | - | true | 
+| close-on-click-modal | 点击遮罩是否关闭 | boolean | - | true |
 | duration | 动画持续时间 | number | - | 300(ms) |
 
 ### Events

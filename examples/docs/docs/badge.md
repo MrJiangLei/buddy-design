@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { Badge } from 'wot-design'
+import { Badge } from 'buddy-design'
 
 Vue.use(Badge)
 ```
@@ -77,9 +77,9 @@ Vue.use(Badge)
 ```
 
 
-### 小红点
+### 点状类型
 
-以红点的形式标注需要关注的内容。
+以点状的形式标注需要关注的内容。
 
  除了数字外，设置`is-dot`属性，它接受一个`Boolean`。
 

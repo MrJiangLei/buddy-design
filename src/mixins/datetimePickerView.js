@@ -1,4 +1,4 @@
-import { padZero, range } from 'wot-design/src/utils'
+import { padZero, range } from 'buddy-design/src/utils'
 import pickerViewProps from '../../packages/picker-view/src/pickerViewProps'
 
 const times = (num, formatter) => {
@@ -250,8 +250,9 @@ export default {
 
       this.innerValue = this.formatValue(value)
     },
-    onColumnChange (pickerView) {
+    onColumnChange (pickerView, item, columnIndex, resolve) {
       this.updateInnerValue()
+      resolve()
     },
     updateColumnValues () {
       const values = this.getValueArray(this.innerValue)

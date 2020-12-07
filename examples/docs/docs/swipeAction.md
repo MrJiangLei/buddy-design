@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { SwipeAction } from 'wot-design'
+import { SwipeAction } from 'buddy-design'
 
 Vue.use(SwipeAction)
 ```
@@ -43,7 +43,7 @@ flex-direction: row;
   width: 40px;
   height: 100%;
   color: white;
-  line-height: 46px;
+  line-height: 44px;
   text-align: center;
 }
 ```

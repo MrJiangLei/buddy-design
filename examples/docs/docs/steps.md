@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { Step, Steps } from 'wot-design'
+import { Step, Steps } from 'buddy-design'
 
 Vue.use(Step)
 Vue.use(Steps)
@@ -108,7 +108,7 @@ Vue.use(Steps)
 
 | 参数      | 说明                                 | 类型      | 可选值       | 默认值   |
 |---------- |------------------------------------ |---------- |------------- |-------- |
-| title | 标题，如果没有则为默认文案。当只有标题而没有描述时，标题的字号会小2号 | string | - | - 
+| title | 标题，如果没有则为默认文案。当只有标题而没有描述时，标题的字号会小2号 | string | - | -
 | description | 描述 | string | - | - |
 | icon | 图标 | string | - | - |
 | status | 步骤状态 | string | 'finished', 'process', 'error' | - |
