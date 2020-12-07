@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import WdLoading from 'wot-design/packages/loading'
+import WdLoading from 'buddy-design/packages/loading'
 
 export default {
   name: 'WdButton',

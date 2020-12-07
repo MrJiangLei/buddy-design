@@ -6,7 +6,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { Icon } from 'wot-design'
+import { Icon } from 'buddy-design'
 
 Vue.use(Icon)
 ```

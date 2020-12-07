@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import locale from 'wot-design/src/mixins/locale'
-import WdIcon from 'wot-design/packages/icon'
+import locale from 'buddy-design/src/mixins/locale'
+import WdIcon from 'buddy-design/packages/icon'
 
 export default {
   name: 'WdInfiniteLoad',

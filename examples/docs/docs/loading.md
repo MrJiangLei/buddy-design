@@ -6,7 +6,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { Loading } from 'wot-design'
+import { Loading } from 'buddy-design'
 
 Vue.use(Loading)
 ```

@@ -1,7 +1,7 @@
-import Button from 'wot-design/packages/button/index.js'
+import Button from 'buddy-design/packages/button/index.js'
 import { mount } from '@vue/test-utils'
 import { testInstall } from './utils'
-import Loading from 'wot-design/packages/loading/index.js'
+import Loading from 'buddy-design/packages/loading/index.js'
 
 testInstall(Button)
 

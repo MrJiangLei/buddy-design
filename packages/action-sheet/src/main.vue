@@ -37,8 +37,8 @@
 </template>
 
 <script>
-import WdPopup from 'wot-design/packages/popup'
-import WdLoading from 'wot-design/packages/loading'
+import WdPopup from 'buddy-design/packages/popup'
+import WdLoading from 'buddy-design/packages/loading'
 
 export default {
   name: 'WdActionSheet',

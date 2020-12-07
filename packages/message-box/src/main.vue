@@ -56,8 +56,8 @@
 </template>
 
 <script>
-import WdPopup from 'wot-design/packages/popup'
-import locale from 'wot-design/src/mixins/locale'
+import WdPopup from 'buddy-design/packages/popup'
+import locale from 'buddy-design/src/mixins/locale'
 
 export default {
   name: 'WdMessageBox',

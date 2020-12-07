@@ -15,6 +15,7 @@
 * 30+ 组件
 * 支持按需引入
 * 支持国际化
+* 支持自定义主题
 
 ### 浏览器支持
 
@@ -22,7 +23,7 @@ Android 4.4+，iOS 8.0+
 
 ### 链接
 
-* [意见反馈](https://github.com/jd-ftf/wot-design/issues)
+* [意见反馈](https://github.com/jd-ftf/buddy-design/issues)
 * [更新日志](#/components/changelog)
 
 ### 开源协议

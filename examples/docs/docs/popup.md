@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { Popup } from 'wot-design'
+import { Popup } from 'buddy-design'
 
 Vue.use(Popup)
 ```
@@ -42,7 +42,7 @@ Vue.use(Popup)
 | position | 弹出位置 | string | 'center', 'top', 'right', 'bottom', 'left' | 'center' |
 | closable | 关闭按钮 | boolean | - | false |
 | lock-scroll | 锁定背景滚动 | boolean | - | true |
-| close-on-click-modal | 点击遮罩是否关闭 | boolean | - | true | 
+| close-on-click-modal | 点击遮罩是否关闭 | boolean | - | true |
 | duration | 动画持续时间 | number | - | 300(ms) |
 
 ### Events

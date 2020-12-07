@@ -1,10 +1,10 @@
 <template>
-  <ul class="side-bar" :class="isMac ? '' : 'win-scrollbar'">
+  <ul class="side-bar" :class="isWindows ? 'win-scrollbar' : ''">
     <li>
       <div class="side-bar__link">关于我们</div>
       <div class="side-bar__github-info">
-        <a href="https://github.com/jd-ftf/wot-design" target="_blank"><i class="github-logo"></i></a>
-        <github-button class="github-star" href="https://github.com/jd-ftf/wot-design" data-icon="octicon-star" data-show-count="true" aria-label="Star jd-ftf/wot-design on GitHub">Star</github-button>
+        <a href="https://github.com/jd-ftf/buddy-design" target="_blank"><i class="github-logo"></i></a>
+        <github-button class="github-star" href="https://github.com/jd-ftf/buddy-design" data-icon="octicon-star" data-show-count="true" aria-label="Star jd-ftf/buddy-design on GitHub">Star</github-button>
       </div>
     </li>
     <li v-for="(group, index) in pages[$route.path.split('/')[1]].sideTabs" class="side-bar__item" :key="index">
@@ -57,7 +57,7 @@
 
 <script>
 import pageConfig from '../pages.config.json'
-import { isMac } from '../utils/index'
+import { isWindows } from '../utils/index'
 import GithubButton from 'vue-github-button'
 
 export default {
@@ -68,7 +68,7 @@ export default {
     return {
       pages: pageConfig,
       parentKey: '',
-      isMac: isMac
+      isWindows
     }
   },
   created () {

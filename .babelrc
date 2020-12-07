@@ -17,10 +17,10 @@
       ],
       "plugins": [
         ["module-resolver", {
-          "root": ["wot-design"],
+          "root": ["buddy-design"],
           "alias": {
-            "wot-design/src": "wot-design/lib",
-            "wot-design/packages": "wot-design/lib"
+            "buddy-design/src": "buddy-design/lib",
+            "buddy-design/packages": "buddy-design/lib"
           }
         }]
       ]

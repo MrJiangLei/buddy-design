@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { Search } from 'wot-design'
+import { Search } from 'buddy-design'
 
 Vue.use(Search)
 ```

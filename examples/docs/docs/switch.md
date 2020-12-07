@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { Switch } from 'wot-design'
+import { Switch } from 'buddy-design'
 
 Vue.use(Switch)
 ```

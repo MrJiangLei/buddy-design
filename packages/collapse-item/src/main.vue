@@ -41,7 +41,7 @@ export default {
   computed: {
     isExpand () {
       if (!this.collapse.value) {
-        console.warn('[wot-design warning]there is no value with Collapse.')
+        console.warn('[buddy-design warning]there is no value with Collapse.')
         return true
       }
 
@@ -74,7 +74,6 @@ export default {
   methods: {
     toggle () {
       if (this.disabled) return
-
       this.collapse.switchValue(this.name, !this.isExpand)
     },
     onTransitionend () {

@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import locale from 'wot-design/src/mixins/locale'
+import locale from 'buddy-design/src/mixins/locale'
 
 export default {
   name: 'WdStep',

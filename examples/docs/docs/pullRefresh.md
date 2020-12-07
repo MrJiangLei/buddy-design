@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { PullRefresh } from 'wot-design'
+import { PullRefresh } from 'buddy-design'
 
 Vue.use(PullRefresh)
 ```

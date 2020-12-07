@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { NoticeBar } from 'wot-design'
+import { NoticeBar } from 'buddy-design'
 
 Vue.use(NoticeBar)
 ```

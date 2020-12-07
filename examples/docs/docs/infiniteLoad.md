@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue'
-import { InfiniteLoad } from 'wot-design'
+import { InfiniteLoad } from 'buddy-design'
 
 Vue.use(InfiniteLoad)
 ```
