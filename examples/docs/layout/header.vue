@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header-container">
       <router-link :to="{ path: '/' }" class="logo-block">
-        <img class="buddy-design-logo" src="../assets/img/wot-design.png" alt="wot design" />
+        <!-- <img class="buddy-design-logo" src="../assets/img/wot-design.png" alt="wot design" /> -->
         <h1 class="buddy-design-title">京麦 Wot Design</h1>
       </router-link>
       <survey></survey>

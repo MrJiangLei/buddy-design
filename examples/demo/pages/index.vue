@@ -90,7 +90,7 @@ export default {
     width: 40px;
     height: 40px;
     margin-right: 10px;
-    background: url('../assets/img/wot-design.png') no-repeat;
+    // background: url('../assets/img/wot-design.png') no-repeat;
     background-size: cover;
     vertical-align: middle;
   }
